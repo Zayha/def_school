@@ -139,7 +139,7 @@ def execution_time(func):
     """
     Декоратор функции для вычисления времени исполнения функции.
     Пример:
-    @functions.execution_time
+    @sf.execution_time
     def main():
     -> Executed main in 0.000142 seconds
 
