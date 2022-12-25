@@ -2,11 +2,12 @@ import functions
 
 
 def main():
-    n = 152
-    l = [2, 6, 54, 3, 3, 8]
-    f = functions.count_sum_of_digits(']')
-    # ff = functions.remove_repetitions2(l)
-    print(f)
+    print(functions.binary_to_decimal('110011'))
+    print(functions.get_prime_factors(225))
+    print(functions.is_natural(5.2))
+    print(functions.check_remainder(9, 3))
+    print(functions.decimal_to_binary(5))
+    print(functions)
 
 
 if __name__ == '__main__':
