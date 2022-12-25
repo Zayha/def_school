@@ -1,3 +1,6 @@
+import time
+
+
 def get_prime_factors(n: int):
     """
     Функция для нахождения натуральных множителей числа n.
@@ -130,3 +133,23 @@ def get_distance(v1, v2):
         return sum_of_squares ** 0.5
     else:
         return False
+
+
+def execution_time(func):
+    """
+    Декоратор функции для вычисления времени исполнения функции.
+    Пример:
+    @functions.execution_time
+    def main():
+    -> Executed main in 0.000142 seconds
+
+    :param func: Передать функцию для подсчета времени исполнения.
+    :return: Возвращает время выполнения функции в секундах.
+    """
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        end = time.perf_counter()
+        print(f'Executed {func.__name__} in {end - start:.6f} seconds')
+        return result
+    return wrapper

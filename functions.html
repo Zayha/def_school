@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>functions</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Candre%5Cpycharmprojects%5Cdef_school%5Cfunctions.py">c:\users\andre\pycharmprojects\def_school\functions.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-binary_to_decimal"><strong>binary_to_decimal</strong></a>(n: str) -&gt; int</dt><dd><tt>Функция&nbsp;для&nbsp;перевода&nbsp;числа&nbsp;n&nbsp;из&nbsp;бинарной&nbsp;системы&nbsp;исчисления&nbsp;в&nbsp;десятичную.<br>
+Пример&nbsp;110011&nbsp;-&gt;&nbsp;51<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Число&nbsp;в&nbsp;двоичной&nbsp;системе&nbsp;исчисления&nbsp;в&nbsp;виде&nbsp;строки(str).<br>
+:return:&nbsp;Возвращается&nbsp;число&nbsp;в&nbsp;десятичной&nbsp;системе&nbsp;исчисления.</tt></dd></dl>
+ <dl><dt><a name="-check_remainder"><strong>check_remainder</strong></a>(n, divisor)</dt><dd><tt>Проверка&nbsp;остатка&nbsp;от&nbsp;деления,&nbsp;например,&nbsp;проверка&nbsp;четности,&nbsp;как&nbsp;частный&nbsp;случай,&nbsp;это&nbsp;<a href="#-check_remainder">check_remainder</a>(4,&nbsp;2)&nbsp;-&gt;&nbsp;True<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Число&nbsp;остаток&nbsp;от&nbsp;деления&nbsp;которого&nbsp;будим&nbsp;проверять<br>
+:param&nbsp;divisor:&nbsp;Делитель&nbsp;числа&nbsp;n<br>
+:return:&nbsp;True&nbsp;-&nbsp;если&nbsp;остаток&nbsp;от&nbsp;деления&nbsp;равен&nbsp;нулю&nbsp;или<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&nbsp;если&nbsp;остаток&nbsp;от&nbsp;деления&nbsp;не&nbsp;нулевой</tt></dd></dl>
+ <dl><dt><a name="-count_sum_of_digits"><strong>count_sum_of_digits</strong></a>(n: [&lt;class 'float'&gt;, &lt;class 'int'&gt;, &lt;class 'str'&gt;])</dt><dd><tt>Функция&nbsp;подсчитывает&nbsp;сумму&nbsp;цифр&nbsp;из&nbsp;которых&nbsp;состоит&nbsp;переданное&nbsp;ф-ции&nbsp;число<br>
+Например:&nbsp;56&nbsp;-&gt;&nbsp;11,&nbsp;23.5&nbsp;-&gt;&nbsp;10<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Число,&nbsp;сумму&nbsp;цифр&nbsp;которого&nbsp;нужно&nbsp;подсчитать,&nbsp;могут&nbsp;быть&nbsp;переданы&nbsp;типы&nbsp;данных&nbsp;int,&nbsp;float,&nbsp;str<br>
+:return:&nbsp;Сумма&nbsp;цифр&nbsp;из&nbsp;которых&nbsp;состоит&nbsp;число&nbsp;n</tt></dd></dl>
+ <dl><dt><a name="-decimal_to_binary"><strong>decimal_to_binary</strong></a>(n) -&gt; str</dt><dd><tt>Функция&nbsp;для&nbsp;перевода&nbsp;числа&nbsp;n&nbsp;из&nbsp;десятичной&nbsp;системы&nbsp;исчисления&nbsp;в&nbsp;двоичную.<br>
+Пример&nbsp;51&nbsp;-&gt;&nbsp;110011<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Число&nbsp;в&nbsp;десятичной&nbsp;системе&nbsp;исчисления.<br>
+:return:&nbsp;Возвращается&nbsp;число&nbsp;в&nbsp;бинарной&nbsp;системе&nbsp;исчисления,&nbsp;в&nbsp;виде&nbsp;строки.</tt></dd></dl>
+ <dl><dt><a name="-execution_time"><strong>execution_time</strong></a>(func)</dt><dd><tt>Декоратор&nbsp;функции&nbsp;для&nbsp;вычисления&nbsp;времени&nbsp;исполнения&nbsp;функции.<br>
+Пример:<br>
+@functions.execution_time<br>
+def&nbsp;main():<br>
+-&gt;&nbsp;Executed&nbsp;main&nbsp;in&nbsp;0.000142&nbsp;seconds<br>
+&nbsp;<br>
+:param&nbsp;func:&nbsp;Передать&nbsp;функцию&nbsp;для&nbsp;подсчета&nbsp;времени&nbsp;исполнения.<br>
+:return:&nbsp;Возвращает&nbsp;время&nbsp;выполнения&nbsp;функции&nbsp;в&nbsp;секундах.</tt></dd></dl>
+ <dl><dt><a name="-get_distance"><strong>get_distance</strong></a>(v1, v2)</dt><dd><tt>Фунция&nbsp;для&nbsp;нахождения&nbsp;расстояния&nbsp;между&nbsp;двумя&nbsp;точками&nbsp;в&nbsp;многомерных&nbsp;пространствах.<br>
+Пример:&nbsp;[0,0,4],&nbsp;[3,0,0]&nbsp;-&gt;&nbsp;5.0<br>
+&nbsp;<br>
+:param&nbsp;v1:&nbsp;Список&nbsp;или&nbsp;коржет&nbsp;из&nbsp;координат&nbsp;первой&nbsp;точки.<br>
+:param&nbsp;v2:&nbsp;Список&nbsp;или&nbsp;коржет&nbsp;из&nbsp;координат&nbsp;второй&nbsp;точки.<br>
+:return:&nbsp;Возвращает&nbsp;расстояние&nbsp;между&nbsp;двумя&nbsp;точками.</tt></dd></dl>
+ <dl><dt><a name="-get_prime_factors"><strong>get_prime_factors</strong></a>(n: int)</dt><dd><tt>Функция&nbsp;для&nbsp;нахождения&nbsp;натуральных&nbsp;множителей&nbsp;числа&nbsp;n.<br>
+Пример:&nbsp;8&nbsp;-&gt;&nbsp;2&nbsp;*&nbsp;2&nbsp;*&nbsp;2<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Число,&nbsp;натуральные&nbsp;множители&nbsp;которого&nbsp;необходимо&nbsp;найти.<br>
+:return:&nbsp;Возвращает&nbsp;список&nbsp;натуральных&nbsp;множителей&nbsp;числа&nbsp;n.</tt></dd></dl>
+ <dl><dt><a name="-is_natural"><strong>is_natural</strong></a>(n)</dt><dd><tt>Функция&nbsp;для&nbsp;проверки&nbsp;является&nbsp;ли&nbsp;число&nbsp;n&nbsp;натуральным.<br>
+Пример:&nbsp;5&nbsp;-&gt;&nbsp;True<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Число,&nbsp;которое&nbsp;будет&nbsp;проверено,&nbsp;является&nbsp;ли&nbsp;оно&nbsp;натуральным.<br>
+:return:&nbsp;Возвращает&nbsp;True&nbsp;-&nbsp;если&nbsp;натуральное&nbsp;или&nbsp;False&nbsp;-&nbsp;если&nbsp;нет.</tt></dd></dl>
+ <dl><dt><a name="-remove_repetitions"><strong>remove_repetitions</strong></a>(n)</dt><dd><tt>Функция&nbsp;убирает&nbsp;дубликаты&nbsp;значений&nbsp;в&nbsp;списке<br>
+Пример&nbsp;[6,&nbsp;2,&nbsp;3,&nbsp;2,&nbsp;5,&nbsp;2]&nbsp;-&gt;&nbsp;[2,&nbsp;3,&nbsp;5,&nbsp;6]<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Список&nbsp;из&nbsp;которого&nbsp;необходимо&nbsp;убрать&nbsp;дублированные&nbsp;значения<br>
+:return:&nbsp;Возвращается&nbsp;*упорядоченный*&nbsp;список&nbsp;уникальных&nbsp;значений</tt></dd></dl>
+ <dl><dt><a name="-remove_repetitions_wos"><strong>remove_repetitions_wos</strong></a>(n)</dt><dd><tt>Функция&nbsp;убирает&nbsp;дубликаты&nbsp;значений&nbsp;в&nbsp;списке,&nbsp;без&nbsp;последующей&nbsp;сортировки<br>
+Пример&nbsp;[6,&nbsp;2,&nbsp;3,&nbsp;2,&nbsp;5,&nbsp;2]&nbsp;-&gt;&nbsp;[6,&nbsp;2,&nbsp;3,&nbsp;5]<br>
+&nbsp;<br>
+:param&nbsp;n:&nbsp;Список&nbsp;из&nbsp;которого&nbsp;необходимо&nbsp;убрать&nbsp;дублированные&nbsp;значения<br>
+:return:&nbsp;Возвращается&nbsp;список&nbsp;уникальных&nbsp;значений</tt></dd></dl>
+</td></tr></table>
+</body></html>
